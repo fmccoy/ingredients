@@ -14,10 +14,10 @@ class IngredientServiceProvider extends ServiceProvider
     public function boot()
     {
         // Views
-        $this->loadViewsFrom(__DIR__.'/../../../resources/views/ingredients/', 'ingredients');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views/ingredients/', 'ingredients');
 
         // Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../../../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 
     /**
